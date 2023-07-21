@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyRatesWCF", "CurrencyRatesWCF\CurrencyRatesWCF.csproj", "{DC304082-29AA-43AE-819C-91D53115EF79}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyRatesMVC", "CurrencyRatesMVC\CurrencyRatesMVC.csproj", "{40D11BA0-359B-43EF-A4DE-F14BF83B32FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DC304082-29AA-43AE-819C-91D53115EF79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC304082-29AA-43AE-819C-91D53115EF79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC304082-29AA-43AE-819C-91D53115EF79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40D11BA0-359B-43EF-A4DE-F14BF83B32FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40D11BA0-359B-43EF-A4DE-F14BF83B32FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40D11BA0-359B-43EF-A4DE-F14BF83B32FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40D11BA0-359B-43EF-A4DE-F14BF83B32FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
