@@ -8,26 +8,22 @@ using System.Text;
 
 namespace CurrencyRatesWCF
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
-    // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
-    public class Service1 : IService1
+    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "RatesService" in code, svc and config file together.
+    // NOTE: In order to launch WCF Test Client for testing this service, please select RatesService.svc or RatesService.svc.cs at the Solution Explorer and start debugging.
+    public class RatesService : IRatesService
     {
-        public string GetData(int value)
+        public List<double> GetCurrencies(string currencyType)
         {
-            return string.Format("You entered: {0}", value);
+            throw new NotImplementedException();
         }
-
-        public CompositeType GetDataUsingDataContract(CompositeType composite)
+  
+        public List<string> GetExchangeRates()
         {
-            if (composite == null)
-            {
-                throw new ArgumentNullException("composite");
-            }
-            if (composite.BoolValue)
-            {
-                composite.StringValue += "Suffix";
-            }
-            return composite;
-        }
+            List<string> rates = new List<string>();
+            rates.Add("TL");
+            rates.Add("Dolar");
+            rates.Add("Euro");
+            rates.Add("Pound");
+         }
     }
 }
