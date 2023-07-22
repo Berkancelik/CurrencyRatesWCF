@@ -1,8 +1,21 @@
-﻿@{
+﻿@model List<string>
+@{
+    Layout = null;
+}
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div>
+
+    <label>PAra Birimi seçiniz:</label>
+</div>
+<div>
+    <select name="excahnge">
+        @foreach (var exchng in Model)
+        {
+            <option>@exchng</option>
+        }
+    </select>
 </div>

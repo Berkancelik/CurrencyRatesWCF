@@ -1,1 +1,0 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="CurrencyRatesWCF.RatesService" CodeBehind="Service1.svc.cs" %>

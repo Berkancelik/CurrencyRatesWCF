@@ -14,9 +14,16 @@ namespace CurrencyRatesWCF
     {
         public List<double> GetCurrencies(string currencyType)
         {
-            throw new NotImplementedException();
+            Random randomCurrency = new Random();
+            List<double> ratesList = new List<double>();
+            for (int i = 0; i < 15; i++)
+            {
+                ratesList.Add(randomCurrency.NextDouble() + 2);
+            }
+            return ratesList;
+
         }
-  
+
         public List<string> GetExchangeRates()
         {
             List<string> rates = new List<string>();
@@ -24,6 +31,8 @@ namespace CurrencyRatesWCF
             rates.Add("Dolar");
             rates.Add("Euro");
             rates.Add("Pound");
-         }
+
+            return rates;
+        }
     }
 }
